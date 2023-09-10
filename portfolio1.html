@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 2px;
+            padding: 2px;
+        }
+
+        body {
+            background-color: rgb(3, 11, 37);
+            color: aquamarine;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 68px;
+            background-color: rgb(62, 94, 209);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(152, 93, 208);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 2rem;
+            margin: 70px 0;
+
+
+        }
+
+        .righttsection img {
+
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(152, 93, 208);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(152, 93, 208);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: #f5f5f5;
+            width: 80vw;
+            height: 2px;
+            margin: 56px;
+            display: flex;
+        }
+        .secondsection.vertical{
+            height: 90px;
+            width: 1px;
+            background-color: #f5f5f5;
+            margin: 0 100px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .footer:before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to bottom, transparent, #333);
+        }
+
+        .footer h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-icons a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Karan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi My name is <span class="purple">karanjyot Singh</span>
+
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightsection"></div>
+            <img src="pg.png.png" alt="Developer" width="45%" height="40%">
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">which I learned</span>
+            <h1>Programming Languages </h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>R</li>
+            <li>Ruby</li>
+          </ul>
+
+        </div> 
+
+
+        </section>
+    </main>
+    
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out and connect with us. We'd love to hear from you!</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Web Designer', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
